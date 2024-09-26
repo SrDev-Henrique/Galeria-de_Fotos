@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #6D4C41;
+    object-fit: cover;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF8E1;
+}
+
+header {
+    background-color: #FFF8E1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 26px;
+    text-transform: uppercase;
+    gap: 26px;
+}
+
+header h1{
+    color: #6D4C41;
+}
+
+form{
+    background: #FFAB91;
+    padding: 5rem 0;
+    text-align: center;
+    display: none;
+    margin-bottom: 1rem;
+}
+
+button, 
+input{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    outline: none;
+    transition: all .5s;
+}
+
+form h2{
+    margin-bottom: 16px;
+}
+
+button{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form .cancelbtn {
+    background-color: #BCAAA4;
+}
+
+button:not(:last-child) {
+    margin-left: 10px;
+}
+
+form .cancelbtn:hover {
+    background-color: #FFF8E1;
+}
+
+.addbtn:hover{
+    background-color: #FFF8E1;
+}
+
+.newbtn:hover{
+    background-color: #FFAB91;
+}
+
+input:hover{
+    background-color: #FFF8E1;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul li{
+    flex: 1 1 calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+}
+
+ul li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.linkContainer {
+    padding: 0.9rem;
+    background-color: rgb(255, 248, 225, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    transition: .4s;
+}
+
+.linkContainer a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: .3s;
+}
+
+.linkContainer a:hover{
+    color: #bd634a;
+}
+
+ul li:hover .linkContainer{
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    ul li {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul li {
+        flex: 1 1 calc(100% - 1rem);
+        max-width: calc(100% - 1rem);
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+
+}
