@@ -163,3 +163,9 @@ ul li:hover .linkContainer{
     }
 
 }
+
+@media (max-width: 400px) {
+    form{
+        padding: 2.5rem 0;
+    }
+}
