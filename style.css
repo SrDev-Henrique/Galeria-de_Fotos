@@ -164,8 +164,21 @@ ul li:hover .linkContainer{
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 570px) {
     form{
         padding: 2.5rem 0;
+    }
+
+    form {
+        flex-wrap: wrap;
+    }
+
+    form input {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    form button:not(:first-child) {
+        margin-left: 5px;
     }
 }
